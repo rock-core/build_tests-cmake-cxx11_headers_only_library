@@ -1,18 +1,8 @@
 #ifndef _DUMMYPROJECT_DUMMY_HPP_
 #define _DUMMYPROJECT_DUMMY_HPP_
 
-namespace cxx11_headers_only_library
-{
-    class DummyClass
-    {
-        public: 
-            /**
-             * Print a welcome to stdout
-             * \return nothing
-             */
-            void welcome();
-    };
-
-} // end namespace cxx11_headers_only_library
+#if __cplusplus!=201103L
+#error "no compiling under C++11"
+#endif
 
 #endif // _DUMMYPROJECT_DUMMY_HPP_
